@@ -1,0 +1,360 @@
+/* styles.css profesional - Colores del Logo SIECYMELSA */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f8f9fa;
+  color: #1a365d;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #2b6cb0;
+}
+
+.logo a {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: #4a5568;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+  position: relative;
+}
+
+nav a:hover {
+  color: #2b6cb0;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #38a169;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2b6cb0 0%, #3182ce 30%, #38a169 70%, #48bb78 100%);
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  height: 120px;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #f7fafc;
+  margin-top: 1rem;
+  max-width: 650px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 1.2rem 2.8rem;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #38a169, #48bb78);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 15px rgba(56, 161, 105, 0.4);
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #2f855a, #38a169);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(56, 161, 105, 0.6);
+}
+
+section.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #2b6cb0, #38a169);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:hover {
+  box-shadow: 0 12px 28px rgba(43, 108, 176, 0.15);
+  transform: translateY(-8px);
+  border-color: #2b6cb0;
+}
+
+.card h3 {
+  color: #2b6cb0;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.card p {
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contact-item {
+  text-align: center;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  min-width: 200px;
+  flex: 1;
+  max-width: 300px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contact-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #38a169, #48bb78);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover::before {
+  transform: scaleX(1);
+}
+
+.contact-item:hover {
+  border-color: #2b6cb0;
+  box-shadow: 0 8px 16px rgba(43, 108, 176, 0.15);
+  transform: translateY(-5px);
+}
+
+.contact-item h3 {
+  color: #2b6cb0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.contact-item p {
+  color: #4a5568;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-size: 0.95rem;
+}
+
+.historia-section {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.historia-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2b6cb0, #38a169, #48bb78);
+}
+
+.company-info {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.company-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #48bb78, #38a169, #2b6cb0);
+}
+
+footer {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem;
+  border-top: 4px solid #38a169;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #2b6cb0, #38a169, #48bb78, #38a169, #2b6cb0);
+}
+
+footer h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero-logo {
+    height: 80px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item {
+    max-width: 100%;
+    min-width: auto;
+  }
+  
+  .card {
+    padding: 2rem;
+  }
+  
+  .hero {
+    height: 70vh;
+    padding: 1.5rem;
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  header {
+    padding: 0.8rem 1rem;
+  }
+}
