@@ -28,13 +28,6 @@ Sitio web oficial de SIECYMELSA, empresa especializada en sistemas de control, e
 
 Este proyecto está configurado para desplegarse automáticamente en GitHub Pages.
 
-### Para desplegar:
-
-1. Haz push de los archivos a tu repositorio de GitHub
-2. Ve a Settings > Pages en tu repositorio
-3. Selecciona "Deploy from a branch"
-4. Elige la rama "main" y la carpeta "/ (root)"
-5. El sitio estará disponible en: `https://tu-usuario.github.io/nombre-del-repo`
 
 ## 📞 Contacto
 
